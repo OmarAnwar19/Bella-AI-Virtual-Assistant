@@ -8,10 +8,15 @@ Bella acts as an interface to transform OpenAI's Chat-GPT into a fully functiona
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install all of the packages required for Bella, by navigating to the project root folder, and using one command:
+After obtaining your Chat-GPT Session Token;
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install all of the packages required for Bella.
 
 ```bash
 pip install .
+touch /src/secret.py
+#Create a new variable for the secret session token
+SESSION_TOKEN = "your_session_token"
 ```
 
 ## Usage
