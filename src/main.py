@@ -31,15 +31,15 @@ def gr_display():
         source="microphone", type="filepath", label="Say Something...")
 
     user_text = gradio.Textbox(label="User Input")
-    bella_audio = gradio.Audio(label="Bella (Audio)")
-    bella_text = gradio.Textbox(label="Bella (Text)")
+    chloe_audio = gradio.Audio(label="Chloe (Audio)")
+    chloe_text = gradio.Textbox(label="Chloe (Text)")
 
     gradio.Interface(
-        title="Hi, I'm Bella, your AI Virtual Assistant.",
+        title="Hi, I'm Chloe, your AI Virtual Assistant.",
         fn=transcribe,
         allow_flagging="never",
         inputs=[user_audio],
-        outputs=[user_text, bella_audio, bella_text], live=True).launch()
+        outputs=[user_text, chloe_audio, chloe_text], live=True).launch()
 
 
 def main():

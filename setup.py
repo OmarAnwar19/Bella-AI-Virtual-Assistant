@@ -8,7 +8,7 @@ with open('LICENSE') as f:
     license = f.read()
 
 setup(
-    name='Bella-AI Virtual Assistant',
+    name='Chloe-AI Virtual Assistant',
     version='0.1.0',
     long_description=readme,
     author='Omar Anwar',
